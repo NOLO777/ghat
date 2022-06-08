@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>ChatTiger</title>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js"></script>
+    
+    <script>
+          // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey:"AIzaSyC69-OpNj0bFFgHMfu7oZ0eCrUOf-yWsK0" ,
+    authDomain: "chattiger-a081e.firebaseapp.com",
+    databaseURL: "https://chattiger-a081e-default-rtdb.firebaseio.com",
+    projectId: "chattiger-a081e",
+    storageBucket: "chattiger-a081e.appspot.com",
+    messagingSenderId: "802134030555",
+    appId: "1:802134030555:web:42d09d6f6b3b58eddb74fe"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+ </head>
+  <body>
+    <body>
+
+        <div class="container">
+    
+            <nav class="navbar navbar-dark bg-dark">
+                <span class="navbar-brand" id="nombreUsuario">Chattiger</span>
+                <div id="botones"></div>
+            </nav>
+        </div>
+    
+        
+        <script src="app.js"></script>
+        <main id="contenidoWeb" class="mt-2 px-2" style="height: 80vh; overflow-y: scroll;"></main>
+        
+        <form class="input-group mb-3 fixed-bottom container d-none" id='formulario'>
+            <input type="text" class="form-control" placeholder="Ingrese mensaje" aria-label="Recipient's username" id="texto">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+        </form>
+    </body>
+
+</html>
